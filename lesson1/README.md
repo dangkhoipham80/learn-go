@@ -9,3 +9,10 @@ Hello World
 Lesson 2:
 go run . -> chạy all file .go
 go build . -> chạy với file thực thi được tạo
+
+Lesson 3: Variable
+
+Lesson 4: Khai báo biến
+camelCase
+Cách 1: var variableName type = value (có thể ko khai báo kiểu dữ liệu/giá trị)
+Cách 2: Sử dụng dấu :=
