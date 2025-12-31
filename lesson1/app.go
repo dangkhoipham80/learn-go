@@ -50,6 +50,7 @@ func main() {
 	phone = "(+84) 987 654 321"
 	fmt.Println("Updated Phone:", phone)
 
+	// Lesson 6
 	var yourNickName string
 	fmt.Print("\nEnter your nickname (1 char): ")
 	fmt.Scanln(&yourNickName) // pointer
