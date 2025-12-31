@@ -15,4 +15,10 @@ Lesson 3: Variable
 Lesson 4: Khai báo biến
 camelCase
 Cách 1: var variableName type = value (có thể ko khai báo kiểu dữ liệu/giá trị)
+1. có thể sử dụng bên trong/ngoài các hàm
+2. Khai báo biến và gán giá trị có thể riêng biệt
 Cách 2: Sử dụng dấu :=
+- Ko được khai báo kiểu dữ liệu
+- Luôn phải gán giá trị
+1. CHỈ sử dụng bên trong các hàm
+2. Bắt buộc phải khai báo giá trị với biến
