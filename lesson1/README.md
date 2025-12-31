@@ -22,3 +22,12 @@ Cách 2: Sử dụng dấu :=
 - Luôn phải gán giá trị
 1. CHỈ sử dụng bên trong các hàm
 2. Bắt buộc phải khai báo giá trị với biến
+
+Lesson 6:
+Biến có thể bị ghi đè
+In: fmt.Scanln(&___pointer___) -> bắt space, enter
+=> Giải pháp bufio.NewScanner(os.Stdin)
+scanner := bufio.NewScanner(os.Stdin)
+if scanner.Scan() {
+    yourFullName = scanner.Text()
+}

@@ -1,7 +1,9 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
+	"os"
 )
 
 var city = "TP. Hồ Chí Minh"
@@ -44,4 +46,20 @@ func main() {
 	country = "Việt Nam"
 	fmt.Println("\nCountry:", country)
 	fmt.Println("Continent:", continent)
+
+	phone = "(+84) 987 654 321"
+	fmt.Println("Updated Phone:", phone)
+
+	var yourNickName string
+	fmt.Print("\nEnter your nickname (1 char): ")
+	fmt.Scanln(&yourNickName) // pointer
+	fmt.Println("Hello,", yourNickName)
+
+	var yourFullName string
+	fmt.Print("\nEnter your full name: ")
+	scanner := bufio.NewScanner(os.Stdin)
+	if scanner.Scan() {
+		yourFullName = scanner.Text()
+	}
+	fmt.Println("Welcome,", yourFullName)
 }
