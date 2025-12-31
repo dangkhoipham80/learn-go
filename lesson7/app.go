@@ -67,4 +67,49 @@ func main() {
 	fmt.Print("Nhập chiều cao (m): ")
 	fmt.Scanf("%f", &height)
 	fmt.Printf("Chiều cao bạn nhập: %.2f m\n", height)
+
+	// Lesson 9: Tìm hiểu Go Formatting Verbs
+	fmt.Println("\n--- Lesson 9: Go Formatting Verbs ---")
+
+	// Biến để demo
+	str := "Go Language"
+	num := 42
+	floatNum := 3.14159
+	isActive := true
+	char := 'A'
+	ptr := &num
+	const typeFormat = "%%T (type): %T\n"
+
+	// %v: Lấy giá trị của biến
+	fmt.Printf("%%v (value): %v\n", num)
+	fmt.Printf("%%v (value): %v\n", str)
+
+	// %T: Hiển thị kiểu dữ liệu
+	fmt.Printf(typeFormat, num)
+	fmt.Printf(typeFormat, str)
+	fmt.Printf(typeFormat, floatNum)
+	fmt.Printf(typeFormat, isActive)
+
+	// %s: String
+	fmt.Printf("%%s (string): %s\n", str)
+
+	// %d: Integer (decimal)
+	fmt.Printf("%%d (integer): %d\n", num)
+
+	// %.f: Floating-point number
+	fmt.Printf("%%.2f (float): %.2f\n", floatNum)
+	fmt.Printf("%%.4f (float): %.4f\n", floatNum)
+
+	// %t: Boolean
+	fmt.Printf("%%t (boolean): %t\n", isActive)
+
+	// %c: Character (rune)
+	fmt.Printf("%%c (character): %c\n", char)
+
+	// %p: Pointer
+	fmt.Printf("%%p (pointer): %p\n", ptr)
+
+	// %%: Hiển thị dấu %
+	fmt.Printf("%%q (quoted): %q\n", str)
+	fmt.Printf("Discount: 50%% off\n")
 }
