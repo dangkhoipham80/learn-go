@@ -56,4 +56,16 @@ func main() {
 	for i := 1; i <= 5; i++ {
 		fmt.Print(i, " ")
 	}
+
+	// Lesson 15: break and continue
+	fmt.Println("\n\nLoop with break and continue:")
+	for i := 1; i <= 10; i++ {
+		if i % 2 == 0 {
+			continue // Skip even numbers
+		}
+		if i > 7 {
+			break // Stop the loop if i is greater than 7
+		}
+		fmt.Print(i, " ")
+	}
 }
