@@ -22,4 +22,15 @@ func main() {
 	fmt.Printf("\nEqual: %d == %d is %t\n", s1, s2, s1 == s2)
 	fmt.Printf("Not Equal: %d != %d is %t\n", s1, s2, s1 != s2)
 	fmt.Printf("Bitwise AND: %d & %d = %d\n", s1, s2, s1&s2)
+
+	// Lesson 11: Logical Operations
+	
+	// Lesson 12: If Else Statements
+	if s1 > s2 && s1 < 20 {
+		fmt.Printf("\n%d is greater than %d and less than 20\n", s1, s2)
+	} else if s1 == s2 || s2 < 10 {
+		fmt.Printf("\n%d is equal to %d or %d is less than 10\n", s1, s2, s2)
+	} else {
+		fmt.Printf("\nNeither condition is true\n")
+	}
 }
