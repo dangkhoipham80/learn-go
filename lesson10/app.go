@@ -50,4 +50,10 @@ func main() {
 	default:
 		fmt.Println("\nWeekend")
 	}
+
+	// Lesson 14: Loops
+	fmt.Println("\nCounting from 1 to 5:")
+	for i := 1; i <= 5; i++ {
+		fmt.Print(i, " ")
+	}
 }
