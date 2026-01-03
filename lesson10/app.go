@@ -33,4 +33,21 @@ func main() {
 	} else {
 		fmt.Printf("\nNeither condition is true\n")
 	}
+
+	// Lesson 13: Switch Statements
+	day := 3
+	switch day {
+	case 1:
+		fmt.Println("\nMonday")
+	case 2:
+		fmt.Println("\nTuesday")
+	case 3:
+		fmt.Println("\nWednesday")
+	case 4:
+		fmt.Println("\nThursday")
+	case 5:
+		fmt.Println("\nFriday")
+	default:
+		fmt.Println("\nWeekend")
+	}
 }
